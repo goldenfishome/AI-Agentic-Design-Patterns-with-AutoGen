@@ -1,5 +1,12 @@
-# filename: fetch_nvidia_stock_data.py
+# filename: install_and_fetch_nvidia_stock_data.py
 
+import subprocess
+import sys
+
+# Install yfinance package
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'yfinance'])
+
+# Import yfinance after installation
 import yfinance as yf
 import pandas as pd
 
